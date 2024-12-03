@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fifteen Puzzle</title>
+  <link rel="stylesheet" href="fifteen.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Fifteen Puzzle</h1>
+    <p>Arrange the tiles in numerical order by sliding them into the blank space!</p>
+    <div class="puzzle-grid" id="puzzle-grid">
+      <!-- Tiles will be generated dynamically using JavaScript -->
+    </div>
+    <button id="shuffle-button">Shuffle</button>
+  </div>
+  <div>
+    <select id="background-selector">
+      <option value="background1.jpg">Background 1</option>
+      <option value="background2.jpg">Background 2</option>
+      <option value="background3.jpg">Background 3</option>
+      <option value="background4.jpg">Background 4</option>
+    </select>
+  </div>
+  <div id="game-time"></div>
+  <div id="move-counter"></div>
+  
+  <script src="fifteen.js"></script>
+</body>
+</html>

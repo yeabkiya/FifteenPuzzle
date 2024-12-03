@@ -1,0 +1,118 @@
+/* fifteen.css */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    margin: 50px auto;
+    width: 450px;
+    text-align: center;
+    padding: 20px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #343a40;
+    font-size: 28px;
+  }
+  
+  .puzzle-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 100px);
+    grid-template-rows: repeat(4, 100px);
+    gap: 2px;
+    margin: 20px auto;
+    background-color: #343a40;
+    width: 408px;
+    height: 408px;
+    border-radius: 5px;
+  }
+  
+  .tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    background-size: 400px 400px;
+    cursor: pointer;
+    border: 2px solid #343a40;
+    border-radius: 5px;
+  }
+  
+  .tile.blank {
+    background: none;
+    cursor: default;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  #game-time,
+  #move-counter {
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #495057;
+    background: #e9ecef;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #background-selector {
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    width: 80%;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* End-of-game notification styling */
+  .win-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    font-weight: bold;
+    color: #28a745;
+    border: 2px solid #28a745;
+    z-index: 1000;
+  }
+  
+  .win-message::after {
+    content: '🎉';
+    font-size: 24px;
+    display: block;
+    margin-top: 10px;
+  }
+  
